@@ -31,7 +31,6 @@ const BlogPost = ({ blog, preview }) => {
           content={blog.summary}
         />
       </Head>
-      {/* <pre>{JSON.stringify(blog, null, 2)}</pre> */}
       <Section isToggled={isToggled}>
         {preview && <PreviewMode />}
         <ToggleSwitch

@@ -25,7 +25,6 @@ const index = ({ blogs }) => {
           content={metaDescription}
         />
       </Head>
-      {/* <pre>{JSON.stringify(res, null, 2)}</pre> */}
       <Container>
         <h1>Personal Development</h1>
         <CardContainer

@@ -26,7 +26,6 @@ const Blog = ({ recentPosts, categories }) => {
           content={metaDescription}
         />
       </Head>
-      {/* <pre>{JSON.stringify(recentPosts, null, 2)}</pre> */}
       <Container>
         <h1>Recent Posts</h1>
         <RecentPostsContainer

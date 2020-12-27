@@ -35,7 +35,6 @@ const about = ({ me }) => {
         />
       </Head>
       <Section>
-        {/* <pre>{JSON.stringify(me, null, 2)}</pre> */}
         <IntroHeader>
           <h1>About Me</h1>
           <div className="row">

@@ -26,7 +26,6 @@ const index = ({ blogs }) => {
         />
       </Head>
       <Container>
-        <pre>{JSON.stringify(blogs, null, 2)}</pre>
         <h1>Programming</h1>
         <CardContainer
           variants={cardSliderParent}
