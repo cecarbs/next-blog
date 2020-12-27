@@ -1,11 +1,11 @@
 import Head from "next/head";
-import HeroSection from "components/HeroSection";
+import ContactForm from "components/ContactForm";
+import Footer from "components/Footer";
 
-export default function Home() {
-  const title =
-    "Charles Carbonel | Avid Learner, Tech Lover, Fitness Enthusiast";
+const contact = () => {
+  const title = "Contact | Charles Carbonel";
   const metaDescription =
-    "Full Stack Developer with a passion for learning and self-improvement.";
+    "Send me a message and I'll respond back to your email as soon as I can.";
   return (
     <>
       <Head>
@@ -19,7 +19,10 @@ export default function Home() {
           content={metaDescription}
         />
       </Head>
-      <HeroSection />
+      <ContactForm />
+      <Footer />
     </>
   );
-}
+};
+
+export default contact;
