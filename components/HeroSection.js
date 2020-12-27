@@ -13,7 +13,13 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg src="/blue-white.mp4" type="video/mp4" autoPlay muted />
+        <VideoBg
+          src="/blue-white.mp4"
+          type="video/mp4"
+          autoPlay
+          muted
+          playsInline
+        />
       </HeroBg>
       <HeroContent>
         <TyperContainer
