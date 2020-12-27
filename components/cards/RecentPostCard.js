@@ -28,7 +28,6 @@ const Card = ({
               alt={alt}
             />
           </div>
-          <div className="filter"></div>
         </div>
         <div className="blog-post__info">
           <div className="blog-post__date">
@@ -52,13 +51,9 @@ const CardContainer = styled(motion.div)`
   padding: 1.25rem;
   flex-direction: column;
   background-color: #1f648a;
-
-  /* box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2); */
-  /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); */
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  /* border-radius: 0.4rem; */
   margin-bottom: 5rem;
   transition: all 0.5s ease;
   margin-left: 1rem;
@@ -67,13 +62,8 @@ const CardContainer = styled(motion.div)`
   transition: all 1s ease;
 
   @media screen and (max-width: 1024px) {
-    /* max-width: 40rem; */
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    /* padding-left: 0rem;
-    padding-right: 0rem;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem; */
   }
 
   @media screen and (max-width: 768px) {
@@ -97,7 +87,6 @@ const CardContainer = styled(motion.div)`
     z-index: 1;
     position: relative;
     overflow: hidden;
-    /* border-radius: 0.4rem; */
 
     .blog-post__img {
       position: absolute;
@@ -106,9 +95,7 @@ const CardContainer = styled(motion.div)`
       z-index: -1;
 
       img {
-        /* border-radius: 0.8rem; */
         object-fit: contain;
-        /* display: block; */
         transition: all 0.5s ease;
       }
     }
@@ -121,18 +108,11 @@ const CardContainer = styled(motion.div)`
         rgba(0, 252, 254, 0.8)
       );
       position: absolute;
-      /* border-radius: 0.8rem; */
       transform: translateX(-100%);
       transition: transform 0.5s;
     }
-
-    @media screen and (max-width: 768px) {
-    }
   }
 
-  &:hover .filter {
-    /* transform: translateX(0); */
-  }
   &:hover img {
     transform: scale(1.2);
     transition: all 0.5s ease;
@@ -154,7 +134,6 @@ const CardContainer = styled(motion.div)`
   .blog-post__date {
     span {
       display: block;
-      /* color: rgba(0, 0, 0, 0.5); */
       color: #041d2b;
       font-size: 0.8rem;
       font-weight: 600;
@@ -166,8 +145,6 @@ const CardContainer = styled(motion.div)`
     font-size: 1.25rem;
     margin: 0.75rem 0 1rem;
     text-transform: uppercase;
-    /* color: #4facf3; */
-    /* color: #f1faee; */
     color: white;
   }
 
@@ -175,31 +152,22 @@ const CardContainer = styled(motion.div)`
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
     color: #f1faee;
-    /* font-style: italic; */
     font-weight: 400;
-    /* color: rgba(0, 0, 0, 0.7); */
   }
 
   .blog-post__cta {
     display: inline-block;
-    /* display: flex; */
     padding: 0.75rem 1.5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 0.6rem;
     color: #e63946;
-    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
     background-color: #a8dadc;
     border-radius: 0.8rem;
     text-decoration: none;
-    /* display: flex; */
     align-items: flex-end;
     position: absolute;
     bottom: 1rem;
-
-    &:hover {
-      /* background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%); */
-    }
   }
 `;
 

@@ -94,7 +94,6 @@ const BlogImage = styled.div`
     font-size: 0.9rem;
 
     a {
-      /* color: #a8dadc; */
       color: #1f648a;
     }
 
@@ -107,8 +106,13 @@ const BlogImage = styled.div`
 
 const BlogStyles = styled.div`
   color: ${({ isToggled }) => (isToggled ? "#FAFAFA" : "black")};
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
+  line-height: 27px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const YouTubeContainer = styled.div`

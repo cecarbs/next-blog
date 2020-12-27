@@ -118,6 +118,10 @@ const IntroHeader = styled.div`
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 1.25rem;
+    }
   }
 
   .icons {
@@ -126,8 +130,16 @@ const IntroHeader = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
     .logo {
       width: 2rem;
+
+      @media screen and (max-width: 768px) {
+        width: 1.5rem;
+      }
     }
 
     p {
@@ -136,6 +148,13 @@ const IntroHeader = styled.div`
       align-items: center;
       padding-left: 1rem;
       padding-right: 1rem;
+
+      @media screen and (max-width: 768px) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -143,6 +162,10 @@ const IntroHeader = styled.div`
     h2 {
       font-weight: 400;
       font-size: 3rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
     span {
       color: #1f648a;

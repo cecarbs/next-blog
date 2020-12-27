@@ -56,6 +56,8 @@ const NavbarContainer = styled(motion.div)`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+
+  display: -webkit-box;
 `;
 
 const LogoContainer = styled.h1`
@@ -90,6 +92,7 @@ const NavItems = styled.div`
       isOpen ? "translateX(0)" : "translateX(-100%)"};
     opacity: ${({ isOpen }) => (isOpen ? "0.95" : "0")};
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    /* z-index: 100000; */
   }
 
   a {

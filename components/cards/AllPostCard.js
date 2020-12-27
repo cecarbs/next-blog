@@ -14,7 +14,6 @@ const Card = ({ slug, summary, title, image, date, variants, alt }) => {
         <div className="blog-post__img">
           <img className="img" src={urlFor(image).width(360).url()} alt={alt} />
         </div>
-        <div className="filter"></div>
       </div>
       <div className="blog-post__info">
         <div className="blog-post__date">
@@ -36,7 +35,6 @@ const CardContainer = styled(motion.div)`
   min-height: 25rem;
   padding: 1.25rem 0rem;
   flex-direction: column;
-  /* background-color: #457b9d; */
   background-color: #1f648a;
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -93,31 +91,10 @@ const CardContainer = styled(motion.div)`
 
       img {
         object-fit: contain;
-        /* display: block; */
         transition: all 0.5s ease;
       }
     }
-    .filter {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(79, 152, 254, 0.8),
-        rgba(0, 252, 254, 0.8)
-      );
-      position: absolute;
-
-      transform: translateX(-100%);
-      transition: transform 0.5s;
-    }
-
-    @media screen and (max-width: 768px) {
-    }
   }
-
-  /* &:hover .filter {
-    transform: translateX(0);
-  } */
 
   &:hover img {
     transform: scale(1.2);
@@ -153,7 +130,6 @@ const CardContainer = styled(motion.div)`
     margin-bottom: 1.5rem;
     color: #f1faee;
     font-size: 0.8rem;
-    /* color: rgba(0, 0, 0, 0.7); */
   }
 
   .blog-post__cta {
@@ -163,16 +139,11 @@ const CardContainer = styled(motion.div)`
     text-transform: uppercase;
     font-size: 0.6rem;
     color: #e63946;
-    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
     background-color: #a8dadc;
     border-radius: 0.8rem;
     align-items: flex-end;
     position: absolute;
     bottom: 1rem;
-
-    &:hover {
-      /* background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%); */
-    }
   }
 `;
 
