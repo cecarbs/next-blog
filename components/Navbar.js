@@ -15,6 +15,7 @@ const Navbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <AnimatePresence exitBeforeEnter>
       <NavbarContainer
@@ -33,7 +34,11 @@ const Navbar = () => {
           </LogoContainer>
         </Link>
         <BurgerMenu onChange={toggle} isOpen={isOpen} />
-        <NavItems router={router.pathname} isOpen={isOpen}>
+        <NavItems
+          router={router.pathname}
+          isOpen={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <Link href="/about">
             <a className="about">About</a>
           </Link>
@@ -92,7 +97,6 @@ const NavItems = styled.div`
       isOpen ? "translateX(0)" : "translateX(-100%)"};
     opacity: ${({ isOpen }) => (isOpen ? "0.95" : "0")};
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-    /* z-index: 100000; */
   }
 
   a {
