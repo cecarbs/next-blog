@@ -34,19 +34,21 @@ const Navbar = () => {
           </LogoContainer>
         </Link>
         <BurgerMenu onChange={toggle} isOpen={isOpen} />
-        <NavItems
-          router={router.pathname}
-          isOpen={isOpen}
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <NavItems router={router.pathname} isOpen={isOpen}>
           <Link href="/about">
-            <a className="about">About</a>
+            <a className="about" onClick={() => setIsOpen(!isOpen)}>
+              About
+            </a>
           </Link>
           <Link href="/blog">
-            <a className="blog">Blog</a>
+            <a className="blog" onClick={() => setIsOpen(!isOpen)}>
+              Blog
+            </a>
           </Link>
           <Link href="/contact">
-            <a className="contact">Contact</a>
+            <a className="contact" onClick={() => setIsOpen(!isOpen)}>
+              Contact
+            </a>
           </Link>
         </NavItems>
       </NavbarContainer>
