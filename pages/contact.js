@@ -1,6 +1,5 @@
 import Head from "next/head";
 import ContactForm from "components/ContactForm";
-import Footer from "components/Footer";
 
 const contact = () => {
   const title = "Contact | Charles Carbonel";
@@ -20,7 +19,6 @@ const contact = () => {
         />
       </Head>
       <ContactForm />
-      <Footer />
     </>
   );
 };

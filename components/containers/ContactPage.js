@@ -9,7 +9,7 @@ const ContactSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   margin-top: -80px;
   background: #112d42;
 
@@ -20,12 +20,7 @@ const ContactSection = styled.section`
     left: 0;
     width: 50%;
     height: 100%;
-    /* background: #457b9d; */
     background: #1f648a;
-  }
-
-  @media screen and (max-width: 768px) {
-    /* width: 50%; */
   }
 `;
 export default Contact;

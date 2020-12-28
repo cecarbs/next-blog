@@ -1,9 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import emailjs from "emailjs-com";
-import Link from "next/link";
 import Section from "components/containers/ContactPage";
 import TyMessage from "components/TyMessage";
 
@@ -33,27 +30,6 @@ const ContactForm = () => {
     <Section>
       {!isSubmitted && (
         <Container>
-          <div className="contactInfo">
-            <div className="information">
-              <h2>Contact Info</h2>
-              <ul className="info">
-                <li>
-                  <Link href="https://www.github.com/cecarbs">
-                    <a>
-                      <GitHubIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.linkedin.com/in/charles-carbonel">
-                    <a>
-                      <LinkedInIcon />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
           <form className="contactForm" onSubmit={sendEmail}>
             <h2>Send me a message</h2>
             <div className="formbox">
@@ -76,7 +52,6 @@ const ContactForm = () => {
           </form>
         </Container>
       )}
-
       {isSubmitted && <TyMessage />}
     </Section>
   );
@@ -88,6 +63,7 @@ const Container = styled.div`
   min-height: 550px;
   display: flex;
   z-index: 2;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     padding: 0;
@@ -96,69 +72,10 @@ const Container = styled.div`
     flex-direction: column;
   }
 
-  .contactInfo {
-    position: absolute;
-    top: 40px;
-    height: calc(100%-80px);
-    background: #0f3959;
-    z-index: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    margin-left: 1rem;
-
-    @media screen and (max-width: 678px) {
-      display: none;
-    }
-
-    @media screen and (max-width: 768px) {
-      position: absolute;
-      transform: translateY(-5.5rem);
-    }
-
-    @media screen and (min-width: 769px) and (max-width: 1023px) {
-      transform: translateX(-1rem);
-    }
-
-    @media screen and (max-width: 1024px) {
-      padding: 30px;
-      margin-left: 2rem;
-    }
-
-    h2 {
-      color: #f1faee;
-      font-size: 24px;
-      font-weight: 500;
-    }
-
-    .info {
-      position: relative;
-      margin: 20px 0;
-
-      li {
-        position: relative;
-        list-style: none;
-        display: flex;
-        margin: 20px 10px;
-        cursor: pointer;
-        align-items: flex-start;
-        color: #e63946;
-      }
-
-      a {
-        text-decoration: none;
-        color: #e63946;
-      }
-    }
-  }
-
   .contactForm {
     position: absolute;
-    padding: 70px 45px 0px 95px;
+    padding: 70px 70px 0px 70px;
     background: #fff;
-    margin-left: 150px;
     width: calc(100% -150px);
     height: 90%;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
@@ -192,8 +109,8 @@ const Container = styled.div`
       align-items: center;
       position: relative;
       margin-right: 1rem;
-      padding-left: 5rem;
-
+      margin-left: 1rem;
+      padding-bottom: 70px;
       flex-direction: column;
     }
 

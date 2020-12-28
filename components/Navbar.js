@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { navbarAnimation } from "components/animations/framerVariants";
 import styled from "styled-components";
 
-// PUT TRANSITIOON IN ANIMATION FOLDER
 const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);

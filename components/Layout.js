@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import styled from "styled-components";
 
 const PageLayout = ({ children }) => {
   const router = useRouter();
-  // ADD IMAGE !!!!!!!!!
+
   return (
     <>
       <Head>
@@ -32,6 +33,7 @@ const PageLayout = ({ children }) => {
       <Content>
         <Navbar />
         <Main>{children}</Main>
+        <Footer />
       </Content>
     </>
   );

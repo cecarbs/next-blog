@@ -114,9 +114,9 @@ const CardContainer = styled.div`
   padding: 5rem 5rem 0rem 5rem;
   align-items: center;
   justify-content: center;
-  /* background-color: #457b9d; */
   background-color: #1f648a;
   margin-bottom: 5rem;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 
   @media screen and (max-width: 768px) {
     margin-top: 0rem;
@@ -132,8 +132,6 @@ const RecentPostsContainer = styled(motion.div)`
   justify-content: center;
   padding-top: 5rem;
   border-bottom: 1px solid lightgray;
-  /* width: 60%;
-  flex-wrap: wrap; */
 
   @media screen and (max-width: 768px) {
     display: flex;

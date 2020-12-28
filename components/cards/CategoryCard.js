@@ -26,7 +26,6 @@ const WideCard = ({ title, description, coverImage, alt }) => {
             alt={alt}
           />
         </div>
-        <div className="filter"></div>
       </div>
       <div className="blog-post__info">
         <h1 className="blog-post__title">{title}</h1>
@@ -52,8 +51,6 @@ const CardContainer = styled(motion.div)`
   transition: all 1s ease;
 
   .img-container {
-    /* min-width: 17.5rem;
-    max-width: 17.5rem; */
     min-width: 21rem;
     max-width: 21rem;
     height: 15rem;
@@ -61,7 +58,6 @@ const CardContainer = styled(motion.div)`
     z-index: 1;
     position: relative;
     overflow: hidden;
-    /* border-radius: 0.4rem; */
 
     .blog-post__img {
       position: absolute;
@@ -70,31 +66,9 @@ const CardContainer = styled(motion.div)`
       z-index: -1;
 
       .img {
-        /* border-radius: 0.8rem; */
         object-fit: contain;
-        /* display: block; */
       }
     }
-    .filter {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(79, 152, 254, 0.8),
-        rgba(0, 252, 254, 0.8)
-      );
-      position: absolute;
-      /* border-radius: 0.8rem; */
-      transform: translateX(-100%);
-      transition: transform 0.5s;
-    }
-
-    @media screen and (max-width: 768px) {
-    }
-  }
-
-  &:hover .filter {
-    /* transform: translateX(0); */
   }
 
   .blog-post__info {
@@ -123,15 +97,9 @@ const CardContainer = styled(motion.div)`
     text-transform: uppercase;
     font-size: 0.6rem;
     color: #e63946;
-    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
     background-color: #a8dadc;
-    /* background: #f1faee; */
     border-radius: 0.8rem;
     text-decoration: none;
-
-    &:hover {
-      /* background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%); */
-    }
   }
 
   @media screen and (max-width: 1068px) {

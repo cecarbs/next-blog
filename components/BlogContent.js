@@ -109,6 +109,11 @@ const BlogStyles = styled.div`
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 27px;
+  padding-bottom: 3rem;
+
+  h2 {
+    font-weight: 500;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
