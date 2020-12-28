@@ -38,8 +38,6 @@ const FooterContainer = styled.div`
   align-items: center;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   justify-content: space-between;
-
-  /* flex-shrink: 0; */
   margin-top: auto;
 
   .information {
@@ -62,7 +60,7 @@ const FooterContainer = styled.div`
   }
 
   @media screen and (max-width: 678px) {
-    display: flex;
+    display: ${({ router }) => (router === "/" ? "none" : "flex")};
     flex-direction: column;
     z-index: 1000;
     text-align: left;
