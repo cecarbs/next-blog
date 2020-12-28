@@ -34,15 +34,29 @@ const ContactForm = () => {
             <h2>Send me a message</h2>
             <div className="formbox">
               <div className="inputbox w50">
-                <input type="text" name="name" required></input>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  aria-label="Name"
+                ></input>
                 <span>Name</span>
               </div>
               <div className="inputbox w50">
-                <input type="text" name="email" required></input>
+                <input
+                  type="text"
+                  name="email"
+                  required
+                  aria-label="Email"
+                ></input>
                 <span>Email</span>
               </div>
               <div className="inputbox w100">
-                <textarea name="message" required></textarea>
+                <textarea
+                  name="message"
+                  required
+                  aria-label="Message"
+                ></textarea>
                 <span>Message</span>
               </div>
               <div className="inputbox w100">

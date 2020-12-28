@@ -59,7 +59,10 @@ const about = ({ me }) => {
               animate="show"
               exit="exit"
             >
-              <img src={urlFor(me.image).width(200).url()} />
+              <img
+                src={urlFor(me.image).width(200).url()}
+                alt={me.image.description}
+              />
             </Avatar>
           </div>
           <motion.div
@@ -99,6 +102,23 @@ const about = ({ me }) => {
     </>
   );
 };
+
+export async function getStaticProps() {
+  const me = await sanityClient.fetch(
+    `*[_type == 'author' && name == 'Charles Carbonel'][0]{
+      image,
+      name,
+      bio[]{..., "asset": asset->},
+    }`
+  );
+
+  return {
+    props: {
+      me,
+    },
+    revalidate: 1,
+  };
+}
 
 const IntroHeader = styled.div`
   display: flex;
@@ -179,20 +199,4 @@ const Avatar = styled(motion.div)`
   }
 `;
 
-export async function getStaticProps() {
-  const me = await sanityClient.fetch(
-    `*[_type == 'author' && name == 'Charles Carbonel'][0]{
-      image,
-      name,
-      bio[]{..., "asset": asset->},
-    }`
-  );
-
-  return {
-    props: {
-      me,
-    },
-    revalidate: 1,
-  };
-}
 export default about;

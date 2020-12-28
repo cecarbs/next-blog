@@ -25,13 +25,13 @@ const Navbar = () => {
         animate="show"
         exit="exit"
       >
-        <Link href="/">
-          <LogoContainer router={router.pathname}>
+        <LogoContainer router={router.pathname}>
+          <Link href="/">
             <a>
               <Logo router={router.pathname} />
             </a>
-          </LogoContainer>
-        </Link>
+          </Link>
+        </LogoContainer>
         <BurgerMenu onChange={toggle} isOpen={isOpen} />
         <NavItems router={router.pathname} isOpen={isOpen}>
           <Link href="/about">
@@ -67,11 +67,11 @@ const NavbarContainer = styled(motion.div)`
 `;
 
 const LogoContainer = styled.h1`
-  color: ${({ router }) => (router === "/" ? "#1D3557" : "#A8DADC")};
   display: flex;
   align-items: center;
 
   a {
+    color: ${({ router }) => (router === "/" ? "#1D3557" : "#A8DADC")};
     display: flex;
     cursor: pointer;
     padding: 0 2rem;

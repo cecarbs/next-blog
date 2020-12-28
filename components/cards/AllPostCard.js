@@ -23,7 +23,7 @@ const Card = ({ slug, summary, title, image, date, variants, alt }) => {
         <p className="blog-post__text">{truncate(summary, 75)}</p>
       </div>
       <Link href={`${router.pathname}/${slug}`}>
-        <a className="blog-post__cta">Read More</a>
+        <a className="blog-post__cta">Read Post</a>
       </Link>
     </CardContainer>
   );

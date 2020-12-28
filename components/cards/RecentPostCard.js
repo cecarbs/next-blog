@@ -37,7 +37,7 @@ const Card = ({
           <p className="blog-post__text">{truncate(summary, 75)}</p>
         </div>
         <Link href={`${router.pathname}/${createTitleLink(category)}/${slug}`}>
-          <a className="blog-post__cta">READ MORE</a>
+          <a className="blog-post__cta">READ POST</a>
         </Link>
       </CardContainer>
     </>

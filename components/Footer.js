@@ -16,13 +16,13 @@ const Footer = () => {
       </div>
       <div className="links">
         <Link href="https://www.github.com/cecarbs">
-          <a>
+          <a aria-label="GitHub">
             <GitHubIcon />
           </a>
         </Link>
 
         <Link href="https://www.linkedin.com/in/charles-carbonel">
-          <a>
+          <a aria-label="LinkedIn">
             <LinkedInIcon />
           </a>
         </Link>
