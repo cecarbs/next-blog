@@ -17,11 +17,11 @@ const BlogHeader = ({
   return (
     <Container isToggled={isToggled}>
       <h1>{title}</h1>
-      <h3>{summary}</h3>
-      <h4>
+      <h2>{summary}</h2>
+      <h3>
         By: <span className="name">{name}</span>{" "}
         <span className="date">on {formatDate(date)}</span>
-      </h4>
+      </h3>
       <img
         initial="hidden"
         animate="show"
@@ -50,7 +50,7 @@ const Container = styled.div`
     margin-bottom: 0rem;
   }
 
-  h3 {
+  h2 {
     font-size: 1.5rem;
     font-weight: 400;
     color: ${({ isToggled }) => (isToggled ? "#b9b9b9" : "#3f3f3f")};
@@ -58,7 +58,7 @@ const Container = styled.div`
     margin-bottom: 0rem;
   }
 
-  h4 {
+  h3 {
     color: gray;
     font-weight: 400;
   }
