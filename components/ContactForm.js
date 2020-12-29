@@ -153,7 +153,7 @@ const Container = styled.div`
     }
 
     .w50 {
-      width: 46%;
+      width: 47%;
 
       @media screen and (max-width: 480px) {
         width: 100%;
@@ -171,6 +171,7 @@ const Container = styled.div`
       resize: none;
       font-size: 18px;
       font-weight: 300;
+      font-family: "Vollkorn", serif;
       color: #333;
       border: none;
       border-bottom: 1px solid #777;
