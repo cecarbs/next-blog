@@ -77,7 +77,6 @@ const Container = styled.div`
     font-size: 0.9rem;
 
     a {
-      /* color: #a8dadc; */
       color: #1f648a;
     }
 
@@ -88,12 +87,8 @@ const Container = styled.div`
   }
 
   .name {
-    /* color: #e63946; */
-    color: #a8dadc;
-  }
-
-  .date {
-    color: gray;
+    color: ${({ isToggled }) => (isToggled ? "#dadada" : "#404040")};
+    font-weight: 500;
   }
 `;
 export default BlogHeader;

@@ -23,7 +23,6 @@ const PageLayout = ({ children }) => {
           content={`${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}`}
         />
         <meta property="og:type" key="og:type" content="website" />
-        <meta property="og:image" key="og:image" content="" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         <link
           rel="canonical"

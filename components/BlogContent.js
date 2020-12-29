@@ -105,7 +105,7 @@ const BlogImage = styled.div`
 `;
 
 const BlogStyles = styled.div`
-  color: ${({ isToggled }) => (isToggled ? "#FAFAFA" : "black")};
+  color: ${({ isToggled }) => (isToggled ? "#B3B3B3" : "black")};
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 27px;

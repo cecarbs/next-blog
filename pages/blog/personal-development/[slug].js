@@ -9,6 +9,7 @@ import Section from "components/containers/BlogPostPage";
 import ToggleSwitch from "components/ToggleSwitch";
 import PreviewMode from "components/PreviewMode";
 import Loading from "components/Loading";
+import SocialShare from "components/SocialShare";
 
 const BlogPost = ({ blog, preview }) => {
   const [isToggled, setIsToggled] = useState(false);
@@ -31,6 +32,7 @@ const BlogPost = ({ blog, preview }) => {
           key="og:description"
           content={blog.summary}
         />
+        <meta property="og:image" key="og:image" content={blog.mainImage} />
       </Head>
       <Section isToggled={isToggled}>
         {preview && <PreviewMode />}
@@ -52,6 +54,12 @@ const BlogPost = ({ blog, preview }) => {
           imageUrl={blog.imageUrl}
         />
         <BlogContent isToggled={isToggled} content={blog.body} />
+        <SocialShare
+          blogTitle={blog.title}
+          metaTitle={title}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}`}
+          summary={blog.summary}
+        />
       </Section>
     </>
   );

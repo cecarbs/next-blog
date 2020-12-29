@@ -33,6 +33,11 @@ const about = ({ me }) => {
           key="og:description"
           content={metaDescription}
         />
+        <meta
+          property="og:image"
+          key="og:image"
+          content="https://cdn.sanity.io/images/rwfxpc28/production/40381d984834a4a1ba29b39fa5d312d5aeaa5749-2999x2999.jpg?w=200"
+        />
       </Head>
       <Section>
         <IntroHeader>
