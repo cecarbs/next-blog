@@ -168,6 +168,12 @@ const CardContainer = styled(motion.div)`
     align-items: flex-end;
     position: absolute;
     bottom: 1rem;
+    /* transition: all 0.3s ease;
+
+    &:hover {
+      color: #a8dadc;
+      background-color: #e63946;
+    } */
   }
 `;
 

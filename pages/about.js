@@ -187,6 +187,7 @@ const IntroHeader = styled.div`
     h2 {
       font-weight: 400;
       font-size: 3rem;
+      color: #121212;
 
       @media screen and (max-width: 768px) {
         font-size: 1.5rem;
