@@ -104,11 +104,8 @@ const CardContainer = styled(motion.div)`
   .blog-post__info {
     margin-top: -3rem;
     max-width: 15rem;
-
-    @media screen and (max-width: 768px) {
-      margin-top: -2rem;
-    }
   }
+
   .blog-post__date {
     span {
       display: block;

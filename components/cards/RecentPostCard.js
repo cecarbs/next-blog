@@ -125,10 +125,6 @@ const CardContainer = styled(motion.div)`
     p {
       font-size: 0.8rem;
     }
-
-    @media screen and (max-width: 768px) {
-      margin-top: -2rem;
-    }
   }
 
   .blog-post__date {
