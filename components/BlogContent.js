@@ -118,6 +118,10 @@ const BlogStyles = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+
+  a {
+    color: #1f648a;
+  }
 `;
 
 const YouTubeContainer = styled.div`

@@ -8,7 +8,7 @@ import {
 import styled from "styled-components";
 
 const HeroSection = () => {
-  const shortBio = ["Fitness Enthusiast", "Avid Learner", "Tech Lover"];
+  const shortBio = ["Fitness Enthusiast", "Avid Learner", "Developer"];
 
   return (
     <HeroContainer>
