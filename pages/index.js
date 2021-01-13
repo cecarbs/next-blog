@@ -3,7 +3,7 @@ import HeroSection from "components/HeroSection";
 
 export default function Home() {
   const title =
-    "Charles Carbonel | Avid Learner, Tech Lover, Fitness Enthusiast";
+    "Charles Carbonel | Avid Learner, Developer, Fitness Enthusiast";
   const metaDescription =
     "Full Stack Developer with a passion for learning and self-improvement.";
   return (
