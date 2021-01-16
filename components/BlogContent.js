@@ -33,9 +33,10 @@ const serializers = {
           />
           <figcaption>
             {"Image by "}
-            <Link href={asset.source.url}>
+            <Link href={asset.url}>
               <a>{description}</a>
             </Link>
+            {/* <pre>{JSON.stringify(asset.url, null, 2)}</pre> */}
           </figcaption>
         </BlogImage>
       );
